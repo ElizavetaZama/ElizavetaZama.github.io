@@ -103,6 +103,8 @@
     height:calc(100vh - 46px);
   }
 
+  .profile-head{ display:block; }
+
   .avatar{
     width:64px; height:64px;
     border-radius:50%;
@@ -303,6 +305,11 @@
     .contacts-title{ padding-top:24px; }
     .feed{ padding:28px 20px 80px; }
     .topbar{ padding:12px 20px; flex-wrap:wrap; gap:10px 16px; }
+
+    .profile-head{ display:flex; align-items:center; gap:16px; }
+    .avatar{ width:56px; height:56px; margin-bottom:0; flex-shrink:0; }
+    .name{ font-size:1.4rem; }
+    .role{ margin-top:2px; }
   }
   /* ============ CASE PAGE (scoped, lives inside .case-page) ============ */
   .case-page{
@@ -443,9 +450,13 @@
   <!-- ===================== SIDEBAR ===================== -->
   <aside class="sidebar">
     <div>
-      <div class="avatar"><img src="images/avatar.jpg" alt="Elizaveta Zamanskaia"></div>
-      <div class="name">Elizaveta Zamanskaia</div>
-      <div class="role">Illustrator &amp; Visual Designer</div>
+      <div class="profile-head">
+        <div class="avatar"><img src="images/avatar.jpg" alt="Elizaveta Zamanskaia"></div>
+        <div class="profile-text">
+          <div class="name">Elizaveta Zamanskaia</div>
+          <div class="role">Illustrator &amp; Visual Designer</div>
+        </div>
+      </div>
 
       <svg class="squiggle" viewBox="0 0 120 14">
         <path d="M2 10 C 20 -2, 35 18, 55 8 S 90 -2, 118 8"/>
@@ -475,7 +486,7 @@
     </ul>
 
     <div class="sidebar-footer">
-      <span>© 2026 Elizaveta Zamanskaia</span>
+      <span>Liza Zamanskaia design + vibe coding</span>
       <span>EN</span>
     </div>
   </aside>
